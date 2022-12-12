@@ -1,0 +1,55 @@
+DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        /* input[type = "text"]{
+            color: red;
+            background-color: aliceblue;
+        } */
+        input[type ^= 't']{
+            color: green;
+        }
+        input[type = "password"]{
+            background-color: pink;
+        }
+        /* a[href = "https://google.co.in" ]{
+       color: red;     
+        } */
+        /* a[href *= "google" ]{
+       color: red;     
+        } */
+        /* a[href ^= "https"]{
+            color: green;
+        } */
+        a[href $= ".com"]{
+            color: red;
+        }
+
+
+    </style>
+    <title>Attribute selector</title>
+</head>
+<body>
+    <h2>Links</h2>
+    <a href="https://google.co.in">Google India</a> <br>
+    <a href="https://google.co.uk">Google UK</a> <br>
+    <a href="https://flipkart.com">Flipkart</a> <br>
+    <a href="facebook.com">Facebook</a> <br>
+    <form>
+        <h2>Form</h2>
+    </form>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname"><br>
+    <label for="pass">Password:</label><br>
+    <input type="password" id="pass"><br><br>
+    <input type="button" value="Submit"><br><br>
+
+</body>
+</html>
+
